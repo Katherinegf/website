@@ -10,7 +10,7 @@ title: Installing Gitpod Self-Hosted
 
 # Installing Gitpod Self-Hosted
 
-> **Note:** Setting up a self-hosted Gitpod instance needs some Kubernetes experience. Detailed guidance on how to setup and maintain a Kubernetes cluster is behind the scope of these docs. See also [_Prerequisites_](./installing-gitpod#prerequisites) below.
+> **Note:** Setting up a self-hosted Gitpod instance needs some Kubernetes experience. Detailed guidance on how to setup and maintain a Kubernetes cluster is behind the scope of these docs. Please also see the [_prerequisites_](./installing-gitpod#prerequisites) below.
 
 ## Prerequisites
 
