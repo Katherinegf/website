@@ -116,5 +116,5 @@ https://community.gitpod.io/* https://www.gitpod.io/chat 301!
 /docs/self-hosted/latest/reference-architecture/production-ready-single-cluster /docs/self-hosted/latest/reference-architecture/single-cluster-ref-arch 301
 /docs/self-hosted/latest/support-patches /docs/self-hosted/latest/config-patches 301
 /docs/self-hosted/latest/getting-started#step-4-install-gitpod /docs/self-hosted/latest/installing-gitpod#install-gitpod 301
-/docs/self-hosted/latest/getting-starte /docs/self-hosted/latest/installing-gitpod 301
+/docs/self-hosted/latest/getting-started /docs/self-hosted/latest/installing-gitpod 301
 /docs/self-hosted/latest/resource-configuration /docs/self-hosted/latest/advanced/resource-configuration 301
