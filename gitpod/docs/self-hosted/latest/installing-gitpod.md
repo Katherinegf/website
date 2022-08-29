@@ -10,16 +10,16 @@ title: Installing Gitpod Self-Hosted
 
 # Installing Gitpod Self-Hosted
 
-> **Note:** Setting up a self-hosted Gitpod instance needs some Kubernetes experience. Detailed guidance on how to setup and maintain a Kubernetes cluster is behind the scope of these docs. See also [_Prerequisites to Install Gitpod Self-Hosted_](../latest#prerequisites-to-install-gitpod-self-hosted).
+> **Note:** Setting up a self-hosted Gitpod instance needs some Kubernetes experience. Detailed guidance on how to setup and maintain a Kubernetes cluster is behind the scope of these docs. See also [_Prerequisites_](./installing-gitpod#prerequisites) below.
 
 ## Prerequisites
 
-> These prerequisites are fulfilled already if you used one of the [reference architectures](./reference-architecture). We strongly encourage the use of these reference architectures. Please see the [cluster requirements](./cluster-set-up) for more information on what Gitpod needs to function.
+> These prerequisites are fulfilled already if you used one of the [reference architectures](./reference-architecture). We strongly encourage the use of these reference architectures. Please see the [cluster requirements](./cluster-requirements) for more information on what Gitpod needs to function.
 
 <details>
   <summary  class="text-p-medium"><b> Kubernetes Cluster</b></summary>
 
-Gitpod is a Kubernetes application that uses Kubernetes internally to provision workspaces as Kubernetes pods. Before you can start installing Gitpod, you need to create a compatible Kubernetes cluster. The [reference architectures](./reference-architecture) will help you to get started with your favorite cloud provider. If you are creating a cluster yourself, it's up to you to set up a cluster that meets the [requirements](./cluster-set-up).
+Gitpod is a Kubernetes application that uses Kubernetes internally to provision workspaces as Kubernetes pods. Before you can start installing Gitpod, you need to create a compatible Kubernetes cluster. The [reference architectures](./reference-architecture) will help you to get started with your favorite cloud provider. If you are creating a cluster yourself, it's up to you to set up a cluster that meets the [requirements](./cluster-requirements).
 
 </details>
 

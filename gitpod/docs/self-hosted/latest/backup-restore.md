@@ -40,7 +40,7 @@ Gitpod uses an image registry to cache images and store images it builds on beha
 
 ### Application Config
 
-Although you could simply re-install Gitpod using the regular [installation path](./getting-started), this can take some time and you would need to re-configure it to the state you had last had it in. To minimize your recovery time, you can persist the application configuration (ideally regularly).
+Although you could simply re-install Gitpod using the regular [installation path](./installing-gitpod), this can take some time and you would need to re-configure it to the state you had last had it in. To minimize your recovery time, you can persist the application configuration (ideally regularly).
 
 Run the following to get the current config values and store them in a `config.yml` file of your Gitpod installation. Note that you need to define the namespace you are using - here we using the default of `gitpod`:
 

@@ -96,10 +96,8 @@ export const MENU: MenuEntry[] = [
       M(
         "Reference Architectures",
         "self-hosted/latest/reference-architecture",
-        [],
-        "alpha"
+        []
       ),
-      M("Cluster Set-Up", "self-hosted/latest/cluster-set-up"),
       M("Installing Gitpod", "self-hosted/latest/installing-gitpod"),
       M("Advanced Installation", "self-hosted/latest/advanced"),
     ]),
@@ -117,6 +115,7 @@ export const MENU: MenuEntry[] = [
     ]),
     M("Reference", "self-hosted/latest/reference", [
       M("Required Components", "self-hosted/latest/required-components"),
+      M("Cluster Requirements", "self-hosted/latest/cluster-requirements"),
       M("Telemetry", "self-hosted/latest/telemetry"),
       M("Release Policies", "self-hosted/latest/releases"),
       M("Upgrade Guides", "self-hosted/latest/upgrade-guides"),

@@ -1,6 +1,6 @@
 ---
 section: self-hosted/latest
-subsection: installation-guides
+subsection: reference
 title: Cluster Set-Up
 ---
 

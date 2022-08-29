@@ -10,7 +10,7 @@ title: Self-Hosted Reference Architectures
 
 # Reference Architectures
 
-Below you will find reference architectures supported and recommended by Gitpod for different situations and all major cloud providers. They help you create the infrastructure needed to run Gitpod Self-Hosted and come in the form of a guide and terraform configuration. All of these are used to validate any changes made to Gitpod on a nightly basis and fulfill the [requirements](../latest/cluster-set-up) Gitpod has on a cluster.
+Below you will find reference architectures supported and recommended by Gitpod for different situations and all major cloud providers. They help you create the infrastructure needed to run Gitpod Self-Hosted and come in the form of a guide and terraform configuration. All of these are used to validate any changes made to Gitpod on a nightly basis and fulfill the [requirements](../latest/cluster-requirements) Gitpod has on a cluster.
 
 > You should see these reference architectures as a starting point for creating the infrastructure that is compliant with what you need. However, the further you deviate from them, the higher the potential for Gitpod to not behave as expected.
 
