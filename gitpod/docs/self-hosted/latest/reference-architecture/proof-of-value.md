@@ -365,9 +365,14 @@ K8S:.status.nodeInfo.kubeletVersion,\
 Instance-ID:.spec.providerID"
 ```
 
-### Configure cluster autoscaling
+### Enable cluster autoscaling
+
+Gitpod's resource usage will vary depending on the number of active workspaces and image prebuilds during the day. The use of a cluster autoscaler is recommended to provision and remove EKS nodes on demand.
 
 ```bash
+CLUSTER_NAME="gitpod-pov"
+AWS_REGION="eu-west-1"
+
 helm repo add autoscaler https://kubernetes.github.io/autoscaler
 helm repo update
 helm upgrade \
