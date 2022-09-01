@@ -23,7 +23,7 @@ title: "Proof-of-Value Reference Architecture"
 
 ## Overview
 
-This reference architecture provides you with a setup where all components that are needed to operate Gitpod are deployed within the Kubernetes cluster. In contrast to a production-oriented setup, this means that the required database, object storage, well as a registry are deployed for you within the cluster. For simplicity, we create only a single node where all workloads will be deployed to.
+This reference architecture provides you with a setup where all components that are needed to operate Gitpod are deployed within the Kubernetes cluster. In contrast to a production-oriented setup, this means that the required database, object storage, well as a registry are deployed for you within the cluster. All cluster services and workspaces are deployed on a single autoscaling node group.
 
 > If you are looking for a scalable and reliable way to run Gitpod, please take a look at our [Single Cluster Reference Architecture](./single-cluster-ref-arch).
 
