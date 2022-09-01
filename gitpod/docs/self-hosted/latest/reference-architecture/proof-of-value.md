@@ -145,6 +145,7 @@ The example `eksctl` config file includes services accounts that might not be re
 - `aws-load-balancer-controller` enables ELB creation for LoadBalancer services and integration with AWS Application Load Balancers
 - `cluster-autoscaler` connects to the AWS autoscaler
 - `ebs-csi-controller-sa` enables provisioning of the EBS volumes for PVC storage
+- `external-dns` creates DNS records for external-facing Gitpod services
 
 Provided below is a complete `eksctl` configuration file that will deploy all the components required for an EKS installation to support Gitpod. All references to a `gitpod-cluster.yaml` file refer to this reference.
 
@@ -189,6 +190,11 @@ iam:
         namespace: cert-manager
       wellKnownPolicies:
         certManager: true
+    - metadata:
+        name: external-dns
+        namespace: external-dns
+      wellKnownPolicies:
+        externalDNS: true
 
 # Uncomment and update for your region if you wish to use fewer availability zones
 # availabilityZones:
