@@ -253,7 +253,7 @@ managedNodeGroups:
       # default cluster name ("gitpod-pov"), update this tag to match
       # your cluster (`k8s.io/cluster-autoscaler/<cluster-name>: "owned"`)
       #
-      # For example: `k8s.io/cluster-autoscaler/gitpod-bigcorp-pov: "owned"`
+      # For example: `k8s.io/cluster-autoscaler/gitpod-corp-pov: "owned"`
       k8s.io/cluster-autoscaler/gitpod-pov: "owned"
 
     labels:
@@ -305,7 +305,7 @@ coredns-5947f47f5f-79vqv   0/1     Pending   0          22m
 coredns-5947f47f5f-97f8m   0/1     Pending   0          22m
 ```
 
-### Calico Installation
+**Calico Installation**
 
 This is following the instructions provided by [Tigera](https://projectcalico.docs.tigera.io/getting-started/kubernetes/managed-public-cloud/eks).
 
@@ -327,11 +327,13 @@ Now configure Calico for EKS-specific support with the following command:
 kubectl -n kube-system set env daemonset/calico-node FELIX_AWSSRCDSTCHECK=Disable
 ```
 
-### SSH Access to nodegroups
+**SSH Access to nodegroups**
 
 `eksctl` allows for [ssh keys](https://eksctl.io/usage/schema/#managedNodeGroups-ssh) to be added to your nodegroups for troubleshooting. By default, the `gitpod-cluster.yaml` does not configure this. AWS Systems Manager is enabled by default, allowing for connectivity [through multiple methods](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-sessions-start.html) to each instance in your nodegroup.
 
-### Create the gitpod nodegroup
+**Create the gitpod nodegroup**
+
+Once the Calico CNI has been provisioned the gitpod nodegroup can be created.
 
 Create the Gitpod nodegroup:
 
@@ -365,7 +367,7 @@ K8S:.status.nodeInfo.kubeletVersion,\
 Instance-ID:.spec.providerID"
 ```
 
-### Enable cluster autoscaling
+**Enable cluster autoscaling**
 
 Gitpod's resource usage will vary depending on the number of active workspaces and image prebuilds during the day. The use of a cluster autoscaler is recommended to provision and remove EKS nodes on demand.
 
@@ -397,7 +399,7 @@ helm upgrade \
     autoscaler autoscaler/cluster-autoscaler
 ```
 
-### Deleting the cluster
+**Deleting the cluster**
 
 When deleting this cluster following your proof of value evaluation, any additional resources added to the VPC will need to be deleted before deleting the cluster, otherwise, cloudformations will fail to delete the VPC and complete deleting the cluster. The alternative is to create a VPC managed separately and install EKS using the additions for working [with existing VPCs](https://eksctl.io/usage/vpc-networking/#use-existing-vpc-other-custom-configuration) in `eksctl`.
 
