@@ -37,7 +37,7 @@
     "@slack/webhook": "^6.0.0",
     "cookie": "^0.5.0",
     "emoji-regex": "^10.0.0",
-    "google-spreadsheet": "^3.1.15",
+    "google-spreadsheet": "^3.3.0",
     "js-cookie": "^3.0.1",
     "nanoid": "^4.0.0"
   },
