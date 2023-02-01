@@ -33,7 +33,7 @@
     "test:e2e": "cypress run --headless --browser firefox"
   },
   "dependencies": {
-    "@sendgrid/mail": "^7.5.0",
+    "@sendgrid/mail": "^7.7.0",
     "@slack/webhook": "^6.0.0",
     "cookie": "^0.5.0",
     "emoji-regex": "^10.0.0",
